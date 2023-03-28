@@ -20,10 +20,17 @@ total = 0
 
 ############## Define program functions #####################
 def main():
-    get_user_data()
-    perform_calculations()
-    display_results()
-
+    more_data = True
+    while more_data:
+        get_user_data()
+        perform_calculations()
+        display_results()
+        yesno = input("\nWould you like to purchase more tickets?  (Y/N): ")
+        if yesno == "n" or yesno == "N":
+            more_data = False
+            print("Thank you for choosing CINEMA HOUSE MOVIES!")
+            
+print("\nThank you for using our temperature converter! Have a nice day!")
 def get_user_data():
     global num_tickets
     num_tickets = int(input("Number of movie tickets:  "))
@@ -48,3 +55,4 @@ def display_results():
 ######### call on main program to execute ###########
 
 main()
+
