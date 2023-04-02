@@ -45,7 +45,7 @@ def main() :
 def get_user_data() :
     global num_hours, job
     job = int(input("Please enter your job tile: \n 1 for Cashier \n 2 for Stocker \n 3 for Janitor \n 4 for Maintenance\n Enter here: "))
-    num_hours = int(input("Number of hours worked: "))
+    num_hours = float(input("Number of hours worked: "))
 
 def perform_calculations() :
     global gross_pay, total_deductions, net_pay, fed_total, state_total, ss_total, med_total, epr
@@ -71,20 +71,20 @@ def perform_calculations() :
 
 
 def display_results() :
-    print ('\n--------------------------------------')###added \n to provide a space between last user input and displayed results
+    print ('\n----------------------------------------')###added \n to provide a space between last user input and displayed results
     print ('******* Fresh Food Marketplace *******')
     print ('   Your neighborhood grocery store')
     print ('        ' + current_time)
-    print ('--------------------------------------')
-    print ('Hours                      : ' + format(num_hours, '8,.2f'))
-    print ('Gross Pay                  $ ' + format(gross_pay, '8,.2f'))
-    print ('Federal Income Tax         $ ' + format(fed_total, '8,.2f'))
-    print ('State Income Tax           $ ' + format(state_total, '8,.2f'))
-    print ('Social Security Tax        $ ' + format(ss_total, '8,.2f'))
-    print ('Medicare Tax               $ ' + format(med_total, '8,.2f'))
-    print ('--------------------------------------')
-    print ('Net Pay                    $ ' + format(net_pay, '8,.2f'))
-    print ('--------------------------------------')
+    print ('----------------------------------------')
+    print ('Hours                      : ' + format(num_hours, '10,.2f'))#changed format based on canvas announcement
+    print ('Gross Pay                  $ ' + format(gross_pay, '10,.2f'))#changed format based on canvas announcement
+    print ('Federal Income Tax         $ ' + format(fed_total, '10,.2f'))#changed format based on canvas announcement
+    print ('State Income Tax           $ ' + format(state_total, '10,.2f'))#changed format based on canvas announcement
+    print ('Social Security Tax        $ ' + format(ss_total, '10,.2f'))#changed format based on canvas announcement
+    print ('Medicare Tax               $ ' + format(med_total, '10,.2f'))#changed format based on canvas announcement
+    print ('----------------------------------------')
+    print ('Net Pay                    $ ' + format(net_pay, '10,.2f'))#changed format based on canvas announcement
+    print ('----------------------------------------')
     
 
 ######## call on main program to execute ######
