@@ -46,9 +46,9 @@ def display_results():
     print('**** CINEMA HOUSE MOVIES ****')
     print('Your neighborhood movie house')
     print('-------------------------------')
-    print('Tickets      $ ' + format(subtotal,'8,.2f'))
-    print('Sales Tax    $ ' + format(sales_tax,'8,.2f'))
-    print('Total        $ ' + format(total,'8,.2f'))
+    print('Tickets      $ ' + format(subtotal,'10,.2f'))
+    print('Sales Tax    $ ' + format(sales_tax,'10,.2f'))
+    print('Total        $ ' + format(total,'10,.2f'))
     print('-------------------------------')
     print(current_time)
 
