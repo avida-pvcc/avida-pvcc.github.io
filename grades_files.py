@@ -84,33 +84,6 @@ def create_report_file():
     repfile.close()
     print("Open this file to view the Grades Report:  " + out_file)
                 
-#    for i in range(len(stu)):
-#            sum_grades = stu[i]['hw'] + stu[i]['mid_exam'] + stu[i]['fin_exam']
-#            stu[i]['fin_grade'] = sum_grades / 3
 
-#            finalgr = stu[i]['fin_grade']
-#            if finalgr >= 90:
-#                lettergrade = 'A'
-#            elif finalgr >= 80:
-#                lettergrade = 'B'
-#            elif finalgr >= 70:
-#                lettergrade = 'C'
-#            elif finalgr >= 60:
-#                lettergrade = 'D'
-#            else:
-#                lettergrade = 'F'
-#           stu[i]['ltr_grade'] = lettergrade
-
-                
-#def print_grade_report():
-#    print("************************ CSC 230 Grade Report ******************")
-#    print("NAME                    HW\tMID\tFIN\tFinal Grade")
-#    for i in range(len(stu)):
-#        sname = '{0:<18}'.format(stu[i]['name'])
-#        hw = str(stu[i]['hw'])
-#        midex = str(stu[i]['mid_exam'])
-#       finex = str(stu[i]['fin_exam'])
-#        fingrade = format(stu[i]['fin_grade'],'6,.2f')
-#       print(sname + "\t" + hw + "\t" + midex + "\t" + finex + "\t" + fingrade + "\t" + stu[i]['ltr_grade'])
 
 main()
